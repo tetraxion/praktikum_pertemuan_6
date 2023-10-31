@@ -27,7 +27,23 @@ class Berita extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              buildCard1(
+              buildCardOne(
+                  "Adakah Genre Musik Khusus untuk Tingkatkan Fokus? Ini Kata Peneliti",
+                  "Minggu, 30 Oktober",
+                  "assets/image/musik.jpeg",
+                  "Apakah ada genre musik tertentu yang bisa meningkatkan fokus? Pertanyaan tersebut menjadi salah satu yang sering ditanyakan. Lalu apakah ada? Nah, peneliti psikologi musik Christ Billy Aryanto pun memberikan penjelasannya kepada 20Detik."),
+              SizedBox(
+                height: 10,
+              ),
+              buildCardOne(
+                  "Hari Mantan Sedunia 30 Oktober, Begini Sejarah dan Cara Merayakannya",
+                  "Minggu, 30 Oktober",
+                  "assets/image/pacaran.jpeg",
+                  "Makassar - Tahukah detikers ternyata ada perayaan Hari Mantan Sedunia yang diperingati setiap tanggal 30 Oktober loh? Lantas seperti apa sejarah dan tujuan peringatan Hari Mantan Sedunia ini?"),
+              SizedBox(
+                height: 10,
+              ),
+              buildCardOne(
                   "MU Mau Lekas Move On Usai Dikalahkan City",
                   "Minggu, 30 Oktober",
                   "assets/image/MU.jpg",
@@ -40,6 +56,14 @@ class Berita extends StatelessWidget {
                   "Selasa, 31 Okt 2023",
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Situs_Megalitikum_Gunung_Padang_Cianjur.jpg/1280px-Situs_Megalitikum_Gunung_Padang_Cianjur.jpg",
                   "Cianjur - Gunung Padang merupakan situs sejarah yang menyimpan segudang misteri hingga kini. Situs ini menarik banyak wisatawan, akademisi, hingga peneliti. Bagaimana kondisi terkini?"),
+              SizedBox(
+                height: 10,
+              ),
+              buildCard(
+                  "Profil Jenderal Agus Subiyanto Calon Panglima TNI, Baru 6 Hari Jabat KSAD",
+                  "Selasa, 31 Okt 2023",
+                  "https://akcdn.detik.net.id/community/media/visual/2023/10/25/ksad-jenderal-agus-subiyanto-4_169.jpeg?w=700&q=90",
+                  "Jakarta - Presiden Joko Widodo (Jokowi) mengirim surat usulan calon Panglima TNI pengganti Laksamana TNI Yudo Margono kepada DPR RI. Dalam surat tersebut, Jokowi mengusulkan nama Jenderal TNI Agus Subiyanto."),
               SizedBox(
                 height: 10,
               ),
@@ -59,27 +83,19 @@ class Berita extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              buildCard1(
-                  "Respons Nyleneh Youtuber Fans Ronaldo saat Messi Menangi Ballon d'Or",
+              buildCardOne(
+                  "Jamuan Makan Siang Jokowi Penuh Keakraban untuk 3 Capres di Istana",
                   "Selasa, 31 Okt 2023",
                   "assets/image/capres3.jpeg",
                   "Jakarta - Presiden Joko Widodo (Jokowi) menggelar pertemuan sambil makan siang bersama tiga capres, Anies Baswedan, Ganjar Pranowo, dan Prabowo Subianto. Pertemuan itu berlangsung hangat dan penuh keakraban."),
               SizedBox(
                 height: 10,
               ),
-              buildCard1(
+              buildCardOne(
                   "Tentang Gencatan Senjata, Hasil Resolusi Majelis Umum PBB soal Gaza",
                   "Selasa, 31 Okt 2023",
                   "assets/image/PBB.jpeg",
                   "Jakarta - Majelis Umum Perserikatan Bangsa-Bangsa (PBB) menyetujui resolusi gencatan senjata terkait konflik perang di Gaza. Resolusi PBB menyerukan gencatan senjata kemanusiaan antara pasukan Israel dan militan Hamas di Gaza, Palestina."),
-              SizedBox(
-                height: 10,
-              ),
-              buildCard(
-                  "OPPO Find N3, Smartphone Foldable Pertama yang Diproduksi di Indonesia",
-                  "Minggu, 29 Oktober",
-                  "https://akcdn.detik.net.id/community/media/visual/2023/10/28/oppo_169.jpeg?w=700&q=90",
-                  "")
             ],
           ),
         ),
@@ -128,7 +144,7 @@ Card buildCard(String title, String date, String img, String desc) {
   );
 }
 
-Card buildCard1(String title, String date, String img, String desc) {
+Card buildCardOne(String title, String date, String img, String desc) {
   return Card(
     child: Padding(
       padding: EdgeInsets.all(15),
